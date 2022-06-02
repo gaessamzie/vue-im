@@ -1,0 +1,11 @@
+body{min-width:280px;font-size:13px;color:#222;line-height:1.45;font-weight:400;font-family:'Noto Sans KR',Apple Gothic,Droid Sans,sans-serif}
+
+#app{position:relative}
+
+.header{position:fixed;top:0;left:0;z-index:100;width:100%;height:24px;padding:16px 0;text-align:center;background:white}
+.header:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:1px;background:#ebebeb}
+.header__title{@include head1}
+
+.container{clear:both;padding:0 0 50px;border-top:56px solid transparent}
+
+.footer{clear:both;background:#f5f5f5}
