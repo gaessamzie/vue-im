@@ -11,6 +11,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     {
+      name: 'privacy',
       path: '/privacy',
       component: privacy
     }
