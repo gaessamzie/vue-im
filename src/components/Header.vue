@@ -9,3 +9,7 @@ export default {
     name: 'Header'
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/scss/components/header';
+</style>
