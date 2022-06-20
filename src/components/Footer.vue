@@ -7,7 +7,7 @@
             <li class="menu__item"><router-link to="/privacy"><strong>개인정보처리방침</strong></router-link></li>
 		</ul>
         <div class="information">
-            <button class="information__adr-button" v-bind:class="{active:address_sh}" v-on:click="address_sh=!address_sh">테스트</button>
+            <button v-bind:class="[address_sh ? 'information__adr-button--active' : 'information__adr-button']" v-on:click="address_sh =! address_sh">사업자정보</button>
             <address class="information__adr-detail" v-show="address_sh">
                 대표 : 신대표<br />
                 서울 성동구 아차산로17길<br />
