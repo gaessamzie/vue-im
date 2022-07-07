@@ -12,7 +12,7 @@
                 대표 : 신대표<br />
                 서울 성동구 아차산로17길<br />
                 전화 : 070-000-0000<br />
-                사업자등록번호 : 000-00-00000
+                사업자등록번호 : 001-01-00001
             </address>
             <p class="information__copy">Copyright © NCGN. All rights reserved.</p>
         </div>
