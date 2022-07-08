@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Aside></Aside>
+    <Header v-bind:aside="aside" @asideChange="asideChange"></Header>
+    <Aside v-bind:aside="aside" @asideChange="asideChange"></Aside>
     <main class="container">
       <router-view></router-view>
     </main>
     <Footer></Footer>
+    <button type="button" v-on:click="aside =! aside">테스트</button>
+    {{aside}}
   </div>
 </template>
 
@@ -18,6 +20,16 @@ export default {
   name: 'App',
   components: {
     Header, Aside, Footer
+  },
+  data() {
+    return {
+      aside: false
+    }
+  },
+  methods: {
+    asideChange(aside) {
+      this.aside = aside;
+    }
   }
 }
 </script>

@@ -6,9 +6,9 @@
 }
 .information{padding:20px 0 9px;text-align:center;border-top:1px solid #ebebeb;
     &__adr-button{display:inline-block;padding:2px;vertical-align:top;font-size:10px;color:#333;line-height:1.4;cursor:pointer;border:none;background:none;}
-    &__adr-button:after{content:"";display:inline-block;width:16px;height:16px;margin:-1px 0 -1px 2px;vertical-align:top;background:url(~@/assets/images/common/ic_arrow16.png) center center no-repeat;background-size:16px 16px;}
+    &__adr-button:after{display:inline-block;width:16px;height:16px;margin:-1px 0 -1px 2px;vertical-align:top;background:url(~@/assets/images/common/ic_arrow16.png) center center no-repeat;background-size:16px 16px;}
     &__adr-button--active{display:inline-block;padding:2px;vertical-align:top;font-size:10px;color:#333;line-height:1.4;cursor:pointer;border:none;background:none;}
-    &__adr-button--active:after{content:"";display:inline-block;width:16px;height:16px;margin:-1px 0 -1px 2px;transform:rotate(180deg);vertical-align:top;background:url(~@/assets/images/common/ic_arrow16.png) center center no-repeat;background-size:16px 16px;}
+    &__adr-button--active:after{display:inline-block;width:16px;height:16px;margin:-1px 0 -1px 2px;transform:rotate(180deg);vertical-align:top;background:url(~@/assets/images/common/ic_arrow16.png) center center no-repeat;background-size:16px 16px;}
     &__adr-detail{padding:0 0 10px;font-size:10px;color:#666;line-height:1.6;}
     &__copy{padding:0 0 10px;font-size:10px;color:#666;line-height:1.4;}
 }

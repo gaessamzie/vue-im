@@ -21,6 +21,7 @@
 
 <script>
 export default {
+    name: 'Footer',
     data() {
         return {
             address_sh: false

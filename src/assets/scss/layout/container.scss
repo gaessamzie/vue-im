@@ -1,3 +1,5 @@
-body{min-width:280px;@include text-default;}
+body{@include mo-min-width;@include text-default;}
 #app{position:relative;}
-.container{clear:both;padding:0 0 50px;border-top:56px solid transparent;}
+.container{clear:both;padding:0 0 50px;border-top:56px solid transparent;
+    &:after{@include float-clear;}
+}

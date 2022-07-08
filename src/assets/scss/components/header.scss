@@ -1,4 +1,5 @@
 .header{position:fixed;top:0;left:0;z-index:100;width:100%;height:24px;padding:16px 0;text-align:center;background:white;
+    &:after{position:absolute;bottom:0;left:0;width:100%;height:1px;background:#ebebeb;}
     &__title{@include text-head1;}
+    &__menu-button{position:absolute;top:50%;right:10px;overflow:hidden;width:40px;height:40px;margin:-20px 0 0;padding:0;text-indent:-9999px;border:none;background:url(~@/assets/images/common/ic_hamburger.png) center center no-repeat;background-size:24px 24px;}
 }
-.header:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:1px;background:#ebebeb;}
