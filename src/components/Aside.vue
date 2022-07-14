@@ -1,20 +1,29 @@
 <template>
     <aside class="aside">
-        햄버거 임시
+        햄버거 임시{{aside}}
         <button type="button" v-on:click="asideClose">닫기</button>
     </aside>
 </template>
 
 <script>
+import eventBus from '@/main';
+
 export default {
     name: 'Aside',
-    props: [
-        'aside'
-    ],
+    data() {
+        return {
+            aside: false
+        }
+    },
     methods: {
         asideClose() {
-            this.$emit('asideChange', this.aside = false);
+            this.aside = false;
         }
+    },
+    created() {
+        eventBus.$on('asideChange', data => {
+            this.aside = data;
+        });
     }
 }
 </script>

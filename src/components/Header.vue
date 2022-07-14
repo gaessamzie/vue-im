@@ -6,14 +6,13 @@
 </template>
 
 <script>
+import eventBus from '@/main';
+
 export default {
     name: 'Header',
-    props: [
-        'aside'
-    ],
     methods: {
         asideOpen() {
-            this.$emit('asideChange', this.aside = true);
+            eventBus.$emit('asideChange', true);
         }
     }
 }
